@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api", backendInternRoute);
 app.use("/api", digitalMarketingRoute);
 app.use("/api", frontendInternRoute);
-app.use("api", serviceRoute);   
+app.use("/api", serviceRoute);   
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
